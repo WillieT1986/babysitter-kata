@@ -9,15 +9,22 @@ public class FamilyTest {
 
 	@Test
 	public void shouldInstantiateFamily() {
-		Family underTest = new Family("name");
+		Family underTest = new Family("name", 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void shouldRetrieveFamilyLetter() {
-		Family underTest = new Family("name");
+		Family underTest = new Family("name", 0);
 		String check = underTest.getFamilyName();
 		assertEquals("name", check);
+	}
+
+	@Test
+	public void shouldReturnFamilyPayRate() {
+		Family underTest = new Family("name", 0);
+		int check = underTest.getPayRate();
+		assertEquals(15, check);
 	}
 
 }

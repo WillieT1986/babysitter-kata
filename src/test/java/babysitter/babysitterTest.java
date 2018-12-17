@@ -4,7 +4,7 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-public class babysitterTest {
+public class BabysitterTest {
 	
 	@Test
 	public void shouldInitiateBabysitterClass() {

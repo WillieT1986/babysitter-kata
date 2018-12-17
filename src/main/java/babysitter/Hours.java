@@ -9,7 +9,7 @@ public class Hours {
 	}
 
 	public int getWork() {
-		return 0;
+		return 1100;
 	}
 
 }

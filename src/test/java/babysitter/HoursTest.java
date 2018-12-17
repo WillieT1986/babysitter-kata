@@ -9,13 +9,13 @@ public class HoursTest {
 	
 	@Test
 	public void shouldConstructWorkingHours() {
-		Hours underTest = new Hours(0);
+		Hours underTest = new Hours(1100);
 		assertNotNull(underTest);
 	}
 	
 	@Test
 	public void shouldReturnWorkingHours() {
-		Hours underTest = new Hours(0);
+		Hours underTest = new Hours(1100);
 		int check = underTest.getWork();
 		assertEquals(1100, check);
 	}

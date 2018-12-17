@@ -1,14 +1,14 @@
 package babysitter;
 
 public class Family {
-	private String familyname;
+	private String familyName;
 
 	public Family(String familyName) {
-		this.familyname = familyName;
+		this.familyName = familyName;
 	}
 
 	public String getFamilyName() {
-		return null;
+		return familyName;
 	}
 
 }

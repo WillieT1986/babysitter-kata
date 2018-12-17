@@ -34,4 +34,14 @@ public class FamilyTest {
 		assertEquals(1700, check);
 	}
 
+	@Test
+	public void shouldReturnMultipleFamilyLetters() {
+		Family underTest = new Family("name1", 0, 0);
+		Family underTest2 = new Family("name2", 0, 0);
+		String check = underTest.getFamilyName();
+		String check2 = underTest2.getFamilyName();
+		assertEquals("name1", check);
+		assertEquals("name2", check2);
+	}
+
 }

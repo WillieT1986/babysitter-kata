@@ -12,5 +12,4 @@ public class BabysitterTest {
 		assertNotNull(underTest);
 	}
 	
-
 }

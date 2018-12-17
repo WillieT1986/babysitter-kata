@@ -29,7 +29,7 @@ public class FamilyTest {
 
 	@Test
 	public void shouldReturnFamilyHours() {
-		Family underTest = new Family("name", 0, 0);
+		Family underTest = new Family("name", 0, 1700);
 		int check = underTest.getFamilyHours();
 		assertEquals(1700, check);
 	}

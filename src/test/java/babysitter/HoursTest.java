@@ -26,5 +26,4 @@ public class HoursTest {
 		int check = underTest.getNonWork(1100);
 		assertEquals(1200, check);
 	}
-	
 }

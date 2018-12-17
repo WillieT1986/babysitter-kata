@@ -23,8 +23,7 @@ public class Hours {
 		else if (i == 0200 && i <= 0259F);
 		else if (i == 0300 && i <= 0359F);
 		else if (i == 0400);
-		
-			return work;
+		return work;
 		}
 
 	public int getNonWork(int i) {
@@ -41,17 +40,6 @@ public class Hours {
 		else if (i == 1400 && i <= 1459);
 		else if (i == 1500 && i <= 1559);
 		else if (i == 1600 && i <= 1659);
-			return nonWork;
+		return nonWork;	
 	}
-	
-	
-//	private int workHour(int i) {
-//
-//		return work;
-//	}
-
-
-	
-	
-
 }

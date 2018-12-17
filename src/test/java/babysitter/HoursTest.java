@@ -16,14 +16,14 @@ public class HoursTest {
 	@Test
 	public void shouldReturnWorkingHours() {
 		Hours underTest = new Hours(1700, 1200);
-		int check = underTest.getWork(1700);
+		int check = underTest.getWork(1800);
 		assertEquals(1700, check);
 	}
 	
 	@Test
 	public void shouldReturnNonWorkingHour() {
-		Hours underTest = new Hours(1100, 1200);
-		int check = underTest.getNonWork();
+		Hours underTest = new Hours(1700, 1200);
+		int check = underTest.getNonWork(1100);
 		assertEquals(1200, check);
 	}
 	

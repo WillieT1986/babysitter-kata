@@ -20,7 +20,7 @@ public class Family {
 	}
 
 	public int getFamilyHours() {
-		return 0;
+		return hours;
 	}
 
 }

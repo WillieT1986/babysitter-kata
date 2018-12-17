@@ -14,7 +14,7 @@ public class Family {
 	}
 
 	public int getPayRate() {
-		return 0;
+		return payRate;
 	}
 
 }

@@ -1,5 +1,6 @@
 package babysitter;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
@@ -7,9 +8,16 @@ import org.junit.Test;
 public class HoursTest {
 	
 	@Test
-	public void ShouldConstructWorkingHours() {
-		Hours underTest = new Hours();
+	public void shouldConstructWorkingHours() {
+		Hours underTest = new Hours(0);
 		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void shouldReturnWorkingHours() {
+		Hours underTest = new Hours(0);
+		int check = underTest.getWork();
+		assertEquals(1100, check);
 	}
 	
 }

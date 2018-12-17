@@ -22,7 +22,7 @@ public class FamilyTest {
 
 	@Test
 	public void shouldReturnFamilyPayRate() {
-		Family underTest = new Family("name", 0);
+		Family underTest = new Family("name", 15);
 		int check = underTest.getPayRate();
 		assertEquals(15, check);
 	}

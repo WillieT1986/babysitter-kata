@@ -37,4 +37,9 @@ public class Family {
 		return hours;
 	}
 
+	@Override
+	public String toString() {
+		return familyName;
+	}
+
 }

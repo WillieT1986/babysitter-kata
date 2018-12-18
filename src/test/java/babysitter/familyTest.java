@@ -44,4 +44,15 @@ public class FamilyTest {
 		assertEquals("name2", check2);
 	}
 
+	@Test
+	public void shouldReturnFamilyLetterPayAndHours() {
+		Family underTest = new Family("name", 15, 1700);
+		String check = underTest.getFamilyName();
+		int check2 = underTest.getPayRate();
+		int check3 = underTest.getFamilyHours();
+		assertEquals("A", check);
+		assertEquals(15, check2);
+		assertEquals(1700, check3);
+	}
+
 }

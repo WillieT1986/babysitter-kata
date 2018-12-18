@@ -25,7 +25,7 @@ public class FamilyTest {
 
 	@Test
 	public void shouldRetrieveFamilyLetter() {
-		String check = underTest.getFamilyName("name");
+		String check = underTest.getFamilyName("A");
 		assertEquals("name", check);
 	}
 

@@ -2,6 +2,9 @@ package babysitter;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Collection;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -60,6 +63,17 @@ public class FamilyTest {
 		assertEquals("A", check);
 		assertEquals(15, check2);
 		assertEquals(1700, check3);
+	}
+
+	@Test
+	public void shouldReturnMultipleFamilies() {
+		Family familyA = new Family(FAMILY_LETTER, PAY_RATE, HOURS);
+		Family familyB = new Family(FAMILY_LETTER, PAY_RATE, HOURS);
+		Collection<Family> families = underTest.families();
+		assertTrue(families.contains(familyA));
+		assertTrue(families.contains(familyB));
+		assertEquals(2, families.size());
+
 	}
 
 }

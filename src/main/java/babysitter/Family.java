@@ -1,5 +1,7 @@
 package babysitter;
 
+import java.util.Collection;
+
 public class Family {
 	private String familyName;
 	private int payRate;
@@ -15,7 +17,7 @@ public class Family {
 		if (letter == "A" || letter == "B" || letter == "C") {
 			return familyName;
 		} else {
-			return null;
+			return "Try Again";
 		}
 	}
 
@@ -25,5 +27,10 @@ public class Family {
 
 	public int getFamilyHours() {
 		return hours;
+	}
+
+	public Collection<Family> families() {
+
+		return null;
 	}
 }

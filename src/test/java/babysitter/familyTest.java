@@ -46,7 +46,7 @@ public class FamilyTest {
 
 	@Test
 	public void shouldReturnFamilyLetterPayAndHours() {
-		Family underTest = new Family("name", 15, 1700);
+		Family underTest = new Family("A", 15, 1700);
 		String check = underTest.getFamilyName();
 		int check2 = underTest.getPayRate();
 		int check3 = underTest.getFamilyHours();

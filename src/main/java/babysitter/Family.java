@@ -12,8 +12,11 @@ public class Family {
 	}
 
 	public String getFamilyName(String letter) {
-		if (letter == "A" || letter == "B" || letter == "C");
-		return familyName;
+		if (letter == "A" || letter == "B" || letter == "C") {
+			return familyName;
+		} else {
+			return null;
+		}
 	}
 
 	public int getPayRate() {

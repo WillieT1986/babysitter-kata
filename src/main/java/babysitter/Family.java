@@ -23,5 +23,4 @@ public class Family {
 	public int getFamilyHours() {
 		return hours;
 	}
-
 }

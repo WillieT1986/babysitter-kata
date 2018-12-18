@@ -1,11 +1,19 @@
 package babysitter;
 
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Family {
 	private String familyName;
 	private int payRate;
 	private int hours;
+
+	public Map<String, Family> families = new HashMap<>();
+
+	public Collection<Family> families() {
+		return families.values();
+	}
 
 	public Family(String familyName, int payRate, int hours) {
 		this.familyName = familyName;
@@ -29,8 +37,4 @@ public class Family {
 		return hours;
 	}
 
-	public Collection<Family> families() {
-
-		return null;
-	}
 }

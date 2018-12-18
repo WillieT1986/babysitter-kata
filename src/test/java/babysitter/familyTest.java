@@ -1,7 +1,9 @@
 package babysitter;
 
+import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import java.util.Collection;
@@ -67,9 +69,10 @@ public class FamilyTest {
 
 	@Test
 	public void shouldReturnMultipleFamilies() {
-		Family familyA = new Family(FAMILY_LETTER, PAY_RATE, HOURS);
-		Family familyB = new Family(FAMILY_LETTER, PAY_RATE, HOURS);
+		Family familyA = new Family("A", PAY_RATE, HOURS);
+		Family familyB = new Family("B", PAY_RATE, HOURS);
 		Collection<Family> families = underTest.families();
+		assertThat(families, containsInAnyOrder(familyA, familyB));
 		assertTrue(families.contains(familyA));
 		assertTrue(families.contains(familyB));
 		assertEquals(2, families.size());

@@ -16,7 +16,7 @@ public class FamilyTest {
 	@Test
 	public void shouldRetrieveFamilyLetter() {
 		Family underTest = new Family("name", 0, 0);
-		String check = underTest.getFamilyName();
+		String check = underTest.getFamilyName("name");
 		assertEquals("name", check);
 	}
 
@@ -38,8 +38,8 @@ public class FamilyTest {
 	public void shouldReturnMultipleFamilyLetters() {
 		Family underTest = new Family("name1", 0, 0);
 		Family underTest2 = new Family("name2", 0, 0);
-		String check = underTest.getFamilyName();
-		String check2 = underTest2.getFamilyName();
+		String check = underTest.getFamilyName("A");
+		String check2 = underTest2.getFamilyName("B");
 		assertEquals("name1", check);
 		assertEquals("name2", check2);
 	}
@@ -47,7 +47,7 @@ public class FamilyTest {
 	@Test
 	public void shouldReturnFamilyLetterPayAndHours() {
 		Family underTest = new Family("A", 15, 1700);
-		String check = underTest.getFamilyName();
+		String check = underTest.getFamilyName("A");
 		int check2 = underTest.getPayRate();
 		int check3 = underTest.getFamilyHours();
 		assertEquals("A", check);

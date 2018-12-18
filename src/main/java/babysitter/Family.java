@@ -11,7 +11,8 @@ public class Family {
 		this.hours = hours;
 	}
 
-	public String getFamilyName() {
+	public String getFamilyName(String letter) {
+		if (letter == "A" || letter == "B" || letter == "C");
 		return familyName;
 	}
 

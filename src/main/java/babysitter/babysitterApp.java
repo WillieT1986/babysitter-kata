@@ -30,6 +30,7 @@ public class BabysitterApp {
 
 		} else {
 			weekDecision.equalsIgnoreCase("N");
+			System.out.println("Maybe I can work next this coming week.");
 		}
 
 		// String dayDecision = input.nextLine();

@@ -44,26 +44,24 @@ public class BabysitterApp {
 			if (!dayDecision.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
 				String optionEntered = input.nextLine();
-				int startTime = input.nextInt();
-				int endTime = input.nextInt();
 
 				if (optionEntered.equalsIgnoreCase("A")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					int endTime = input.nextInt();
 
 				} else if (optionEntered.equalsIgnoreCase("B")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					int endTime = input.nextInt();
 
 				} else if (optionEntered.equalsIgnoreCase("C")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					int endTime = input.nextInt();
 				}
 			}
 
@@ -73,26 +71,24 @@ public class BabysitterApp {
 			if (!dayDecision2.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
 				String optionEntered = input.nextLine();
-				int startTime = input.nextInt();
-				int endTime = input.nextInt();
 
 				if (optionEntered.equalsIgnoreCase("A")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					int endTime = input.nextInt();
 
 				} else if (optionEntered.equalsIgnoreCase("B")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					int endTime = input.nextInt();
 
 				} else if (optionEntered.equalsIgnoreCase("C")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					int endTime = input.nextInt();
 				}
 			}
 

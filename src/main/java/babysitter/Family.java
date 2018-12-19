@@ -15,6 +15,10 @@ public class Family {
 		return families.values();
 	}
 
+	public void add(Family family) {
+		families.put(family.getFamilyName(""), family);
+	}
+
 	public Family(String familyName) {
 		this.familyName = familyName;
 	}

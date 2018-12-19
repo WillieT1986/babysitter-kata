@@ -61,5 +61,4 @@ public class FamilyTest {
 		assertEquals(15, check2);
 		assertEquals(1700, check3);
 	}
-
 }

@@ -53,9 +53,13 @@ public class BabysitterApp {
 					int endTime = input.nextInt();
 				} else {
 					System.out.println("Enter in the the correct Family Letter: A, B, C");
-				}
+				} // End of Sundays Decision
 
-			} // End of Sunday Decision //
+				// Monday
+				System.out.println("Did you work on Monday? Y or N");
+			} else if (!dayDecision.equalsIgnoreCase("N")) {
+
+			} // End of Mondays Decision
 
 		} else { // End of weekDecision
 			weekDecision.equalsIgnoreCase("No");

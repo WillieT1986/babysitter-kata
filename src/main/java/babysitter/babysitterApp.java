@@ -30,7 +30,7 @@ public class BabysitterApp {
 
 			System.out.println("Did you work on Sunday? Y or N");
 			String dayDecision = input.nextLine();
-			if (!dayDecision.equalsIgnoreCase("Y")) {
+			if (!dayDecision.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
 
 			}

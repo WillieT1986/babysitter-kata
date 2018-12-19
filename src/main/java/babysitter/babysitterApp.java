@@ -7,6 +7,9 @@ public class BabysitterApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
+		// String decision = "";
+		// while (!decision.equalsIgnoreCase("Yes")) {
+
 		System.out.println("This is my version of the Babysitter Kata.");
 		System.out.println("\tThank You for your time.\n");
 
@@ -22,6 +25,21 @@ public class BabysitterApp {
 		System.out.println("Family C: $21.00 - 1700hrs to 2100hrs | $15.00 - 2100hrs to 0400hrs\n");
 
 		System.out.println("Did you work on this week? Y or N");
+		String weekDecision = input.nextLine();
+		if (weekDecision.equalsIgnoreCase("Y")) {
 
+		} else {
+			weekDecision.equalsIgnoreCase("N");
+		}
+
+		// String dayDecision = input.nextLine();
+		// System.out.println("Did you work on Sunday? ");
+		// if (dayDecision.equalsIgnoreCase("Y")) {
+		// System.out.println("Which Family did you work for: Family A, B, or C?");
+		//
+		// }
+
+		// } // End of While Loop
+		input.close();
 	}
 }

@@ -7,6 +7,14 @@ public class BabysitterApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
+		Family families = new Family("");
+
+		Family familyA = new Family("A");
+		Family familyB = new Family("B");
+		Family familyC = new Family("C");
+
+		// families.add <- This command does not exist.
+
 		// String decision = "";
 		// while (!decision.equalsIgnoreCase("Yes")) {
 
@@ -32,6 +40,11 @@ public class BabysitterApp {
 			String dayDecision = input.nextLine();
 			if (!dayDecision.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
+
+				// String optionEntered = input.nextLine();
+				// if (optionEntered.equalsIgnoreCase("A")) {
+				//
+				// }
 
 			}
 

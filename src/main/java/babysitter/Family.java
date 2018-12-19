@@ -15,6 +15,10 @@ public class Family {
 		return families.values();
 	}
 
+	public Family(String familyName) {
+		this.familyName = familyName;
+	}
+
 	public Family(String familyName, int payRate, int hours) {
 		this.familyName = familyName;
 		this.payRate = payRate;

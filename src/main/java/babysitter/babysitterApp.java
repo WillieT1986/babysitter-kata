@@ -36,8 +36,6 @@ public class BabysitterApp {
 
 		System.out.println("Did you work on this week? Y or N");
 		String weekDecision = input.nextLine();
-		int startTime = input.nextInt();
-		int endTime = input.nextInt();
 		if (weekDecision.equalsIgnoreCase("Y")) {
 
 			System.out.println("Did you work on Sunday? Y or N");
@@ -45,24 +43,21 @@ public class BabysitterApp {
 			if (!dayDecision.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
 				String optionEntered = input.nextLine();
-
 				if (optionEntered.equalsIgnoreCase("A")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
-
+					input.nextInt();
 				} else if (optionEntered.equalsIgnoreCase("B")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
-
+					input.nextInt();
 				} else if (optionEntered.equalsIgnoreCase("C")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					input.nextInt();
 				}
 			}
 
@@ -74,21 +69,19 @@ public class BabysitterApp {
 
 				if (optionEntered.equalsIgnoreCase("A")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
-
+					input.nextInt();
 				} else if (optionEntered.equalsIgnoreCase("B")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
-
+					input.nextInt();
 				} else if (optionEntered.equalsIgnoreCase("C")) {
 					System.out.println("Enter Start Time: ");
-					startTime = input.nextInt();
+					input.nextInt();
 					System.out.println("Enter End Time: ");
-					endTime = input.nextInt();
+					input.nextInt();
 				}
 			}
 

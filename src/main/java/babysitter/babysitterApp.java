@@ -34,70 +34,34 @@ public class BabysitterApp {
 				"Family B: $12.00 - 1700hrs to 2200hrs | $8.00  - 2200hrs to 0000hrs | $16.00 - 0000hrs to 0400hrs");
 		System.out.println("Family C: $21.00 - 1700hrs to 2100hrs | $15.00 - 2100hrs to 0400hrs\n");
 
-		System.out.println("Did you work on this week? Y or N");
+		System.out.println("Did you work on this week? Yes or No");
 		String weekDecision = input.nextLine();
-		if (weekDecision.equalsIgnoreCase("Y")) {
+		if (weekDecision.equalsIgnoreCase("Yes")) {
 
 			// Sunday
 			System.out.println("Did you work on Sunday? Y or N");
+
 			String dayDecision = input.nextLine();
-			String dayDecision2 = input.nextLine();
-			String optionEntered = input.nextLine();
+			if (dayDecision.equalsIgnoreCase("Y")) { // Start of Sunday Decision
 
-			if (dayDecision.equalsIgnoreCase("Y")) {
 				System.out.println("Choose a Family: A, B or C");
+				String family = input.nextLine();
 
-			} else if (optionEntered.equalsIgnoreCase("A")) {
-				System.out.println("Enter Start Time: ");
-				int startTime = input.nextInt();
-				System.out.println("Enter End Time: ");
-				int endTime = input.nextInt();
-
-			} else if (optionEntered.equalsIgnoreCase("B")) {
-				System.out.println("Enter Start Time: ");
-				int startTime = input.nextInt();
-				System.out.println("Enter End Time: ");
-				int endTime = input.nextInt();
-
-			} else if (optionEntered.equalsIgnoreCase("C")) {
-				System.out.println("Enter Start Time: ");
-				int startTime = input.nextInt();
-				System.out.println("Enter End Time: ");
-				int endTime = input.nextInt();
-
-			} else if (dayDecision.equalsIgnoreCase("N")) {
-
-				// Monday
-				System.out.println("Did you work on Monday? Y or N");
-
-			} else if (dayDecision2.equalsIgnoreCase("Y")) {
-				System.out.println("Choose a Family: A, B or C");
-				// String optionEntered = input.nextLine();
-
-				if (optionEntered.equalsIgnoreCase("A")) {
+				String familyDecision = input.nextLine();
+				if (familyDecision.equalsIgnoreCase("A") || familyDecision.equalsIgnoreCase("B")
+						|| familyDecision.equalsIgnoreCase("C")) {
 					System.out.println("Enter Start Time: ");
 					int startTime = input.nextInt();
 					System.out.println("Enter End Time: ");
 					int endTime = input.nextInt();
-
-				} else if (optionEntered.equalsIgnoreCase("B")) {
-					System.out.println("Enter Start Time: ");
-					int startTime = input.nextInt();
-					System.out.println("Enter End Time: ");
-					int endTime = input.nextInt();
-
-				} else if (optionEntered.equalsIgnoreCase("C")) {
-					System.out.println("Enter Start Time: ");
-					int startTime = input.nextInt();
-					System.out.println("Enter End Time: ");
-					int endTime = input.nextInt();
+				} else {
+					dayDecision.equalsIgnoreCase("N");
 				}
-			} else {
-				dayDecision2.equalsIgnoreCase("N");
-			}
+
+			} // End of Sunday Decision
 
 		} else { // End of weekDecision
-			weekDecision.equalsIgnoreCase("N");
+			weekDecision.equalsIgnoreCase("No");
 			System.out.println("Maybe I can work next this coming week.");
 		}
 
@@ -105,3 +69,31 @@ public class BabysitterApp {
 		input.close();
 	}
 }
+
+// } else if (dayDecision.equalsIgnoreCase("N")) {
+//
+// // Monday
+// System.out.println("Did you work on Monday? Y or N");
+
+// } else if (dayDecision.equalsIgnoreCase("Y")) {
+// System.out.println("Choose a Family: A, B or C");
+// // String optionEntered = input.nextLine();
+//
+// if (optionEntered.equalsIgnoreCase("A")) {
+// System.out.println("Enter Start Time: ");
+// int startTime = input.nextInt();
+// System.out.println("Enter End Time: ");
+// int endTime = input.nextInt();
+//
+// } else if (optionEntered.equalsIgnoreCase("B")) {
+// System.out.println("Enter Start Time: ");
+// int startTime = input.nextInt();
+// System.out.println("Enter End Time: ");
+// int endTime = input.nextInt();
+//
+// } else if (optionEntered.equalsIgnoreCase("C")) {
+// System.out.println("Enter Start Time: ");
+// int startTime = input.nextInt();
+// System.out.println("Enter End Time: ");
+// int endTime = input.nextInt();
+// }

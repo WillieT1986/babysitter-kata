@@ -43,10 +43,12 @@ public class BabysitterApp {
 			if (!dayDecision.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
 
-				// String optionEntered = input.nextLine();
-				// if (optionEntered.equalsIgnoreCase("A")) {
-				//
-				// }
+				String optionEntered = input.nextLine();
+
+				if (optionEntered.equalsIgnoreCase("A")) {
+					System.out.println("Enter Start Time: ");
+					int startTime = input.nextInt();
+				}
 
 			}
 

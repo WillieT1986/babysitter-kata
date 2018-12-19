@@ -28,17 +28,17 @@ public class BabysitterApp {
 		String weekDecision = input.nextLine();
 		if (weekDecision.equalsIgnoreCase("Y")) {
 
+			System.out.println("Did you work on Sunday? Y or N");
+			String dayDecision = input.nextLine();
+			if (!dayDecision.equalsIgnoreCase("Y")) {
+				System.out.println("Choose a Family: A, B or C");
+
+			}
+
 		} else {
 			weekDecision.equalsIgnoreCase("N");
 			System.out.println("Maybe I can work next this coming week.");
 		}
-
-		// String dayDecision = input.nextLine();
-		// System.out.println("Did you work on Sunday? ");
-		// if (dayDecision.equalsIgnoreCase("Y")) {
-		// System.out.println("Which Family did you work for: Family A, B, or C?");
-		//
-		// }
 
 		// } // End of While Loop
 		input.close();

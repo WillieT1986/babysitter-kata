@@ -48,10 +48,20 @@ public class BabysitterApp {
 				if (optionEntered.equalsIgnoreCase("A")) {
 					System.out.println("Enter Start Time: ");
 					int startTime = input.nextInt();
+					System.out.println("Enter End Time: ");
+					int endTime = input.nextInt();
+				} else if (optionEntered.equalsIgnoreCase("B")) {
+					System.out.println("Enter Start Time: ");
+					int startTime = input.nextInt();
+					System.out.println("Enter End Time: ");
+					int endTime = input.nextInt();
+				} else if (optionEntered.equalsIgnoreCase("C")) {
+					System.out.println("Enter Start Time: ");
+					int startTime = input.nextInt();
+					System.out.println("Enter End Time: ");
+					int endTime = input.nextInt();
 				}
-
 			}
-
 		} else {
 			weekDecision.equalsIgnoreCase("N");
 			System.out.println("Maybe I can work next this coming week.");

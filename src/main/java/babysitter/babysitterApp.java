@@ -13,7 +13,9 @@ public class BabysitterApp {
 		Family familyB = new Family("B");
 		Family familyC = new Family("C");
 
-		// families.add <- This command does not exist.
+		families.add(familyA);
+		families.add(familyB);
+		families.add(familyC);
 
 		// String decision = "";
 		// while (!decision.equalsIgnoreCase("Yes")) {

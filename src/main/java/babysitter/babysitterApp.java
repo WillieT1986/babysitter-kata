@@ -63,12 +63,11 @@ public class BabysitterApp {
 					System.out.println("Enter End Time: ");
 					int endTime = input.nextInt();
 				}
-			}
 
-			// Monday
-			System.out.println("Did you work on Monday? Y or N");
-			String dayDecision2 = input.nextLine();
-			if (!dayDecision2.equalsIgnoreCase("N")) {
+				// Monday
+				System.out.println("Did you work on Monday? Y or N");
+				// String dayDecision2 = input.nextLine();
+			} else if (!dayDecision.equalsIgnoreCase("N")) {
 				System.out.println("Choose a Family: A, B or C");
 				String optionEntered = input.nextLine();
 

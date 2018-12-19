@@ -11,7 +11,7 @@ public class Family {
 
 	public Map<String, Family> families = new HashMap<>();
 
-	public Collection<Family> families() {
+	public Collection<Family> familiyLetters() {
 		return families.values();
 	}
 

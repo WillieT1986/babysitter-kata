@@ -49,25 +49,6 @@ public class BabysitterApp {
 			}
 		} // End of Sunday Decision
 
-		// Monday
-		System.out.println("Did you work on Monday? Y or N");
-		String newDecision = input.nextLine();
-		if (!newDecision.equalsIgnoreCase("N")) {
-
-			String familyDecision = input.next();
-			System.out.println("Choose a Family: A, B, C");
-			if (familyDecision.equalsIgnoreCase("A") || familyDecision.equalsIgnoreCase("B")
-					|| familyDecision.equalsIgnoreCase("C")) {
-				System.out.println("Enter Start Time: ");
-				int startTime = input.nextInt();
-				System.out.println("Enter End Time: ");
-				int endTime = input.nextInt();
-			} else {
-				System.out.println("Enter in the the correct Family Letter: A, B, C");
-			}
-		}
-		// End of Mondays Decision
-
 		input.close();
 	}
 }

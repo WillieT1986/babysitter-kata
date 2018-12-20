@@ -27,32 +27,21 @@ public class Hours {
 	}
 
 	public int getNonWork(int i) {
-		if (i >= 0401 && i <= 0459F)
-			;
-		else if (i >= 0500 && i <= 0559F)
-			;
-		else if (i >= 0600 && i <= 0659F)
-			;
-		else if (i >= 0700 && i <= 0759F)
-			;
-		else if (i >= 0800F && i <= 0859F)
-			;
-		else if (i >= 0900F && i <= 0959F)
-			;
-		else if (i >= 1000 && i <= 1059)
-			;
-		else if (i >= 1100 && i <= 1159)
-			;
-		else if (i == 1200 && i <= 1259)
-			;
-		else if (i == 1300 && i <= 1359)
-			;
-		else if (i == 1400 && i <= 1459)
-			;
-		else if (i == 1500 && i <= 1559)
-			;
-		else if (i == 1600 && i <= 1659)
-			;
+		if (i >= 0401 && i <= 0459F) {
+		} else if (i >= 0500 && i <= 0559F) {
+		} else if (i >= 0600 && i <= 0659F) {
+		} else if (i >= 0700 && i <= 0759F) {
+		} else if (i >= 0800F && i <= 0859F) {
+		} else if (i >= 0900F && i <= 0959F) {
+		} else if (i >= 1000 && i <= 1059) {
+		} else if (i >= 1100 && i <= 1159) {
+		} else if (i == 1200 && i <= 1259) {
+		} else if (i == 1300 && i <= 1359) {
+		} else if (i == 1400 && i <= 1459) {
+		} else if (i == 1500 && i <= 1559) {
+		} else if (i == 1600 && i <= 1659) {
+		}
 		return nonWork;
+
 	}
 }

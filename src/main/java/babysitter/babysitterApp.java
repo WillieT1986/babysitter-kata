@@ -7,16 +7,6 @@ public class BabysitterApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		Family families = new Family("");
-
-		Family familyA = new Family("A");
-		Family familyB = new Family("B");
-		Family familyC = new Family("C");
-
-		families.add(familyA);
-		families.add(familyB);
-		families.add(familyC);
-
 		System.out.println("\t\tThis is my version of the Babysitter Kata.");
 		System.out.println("\t\t\tThank You for your time.\n");
 
@@ -35,21 +25,27 @@ public class BabysitterApp {
 		System.out.println("Did you work Tonight? Y or N");
 		String dayDecision = input.nextLine();
 		if (dayDecision.equalsIgnoreCase("Y")) { // Start of Sunday Decision
-			System.out.println("Choose a Family: A, B, C");
-			String familyDecision = input.next();
+			System.out.println("\nChoose a Family: A, B, C");
+			String familyName = input.next();
+			if (familyName.equalsIgnoreCase("A") || familyName.equalsIgnoreCase("B")
+					|| familyName.equalsIgnoreCase("C")) {
 
-			if (familyDecision.equalsIgnoreCase("A") || familyDecision.equalsIgnoreCase("B")
-					|| familyDecision.equalsIgnoreCase("C")) {
-				System.out.println("Enter Start Time: ");
-				int startTime = input.nextInt();
-				System.out.println("Enter End Time: ");
-				int endTime = input.nextInt();
-			} else {
+			} else if (!familyName.equalsIgnoreCase("A") || !familyName.equalsIgnoreCase("B")
+					|| !familyName.equalsIgnoreCase("C")) {
 				System.out.println("Enter in the the correct Family Letter: A, B, C");
 			}
-			System.out.println("You work for a total of " + "hour's tonight and made a total of $" + " tonight.\n\n");
+
+			System.out.println("\nEnter Start Time:");
+			int startTime = input.nextInt();
+			if (startTime >= 1700 && startTime <= 2359 && startTime >= 0000 && startTime <= 0400) {
+			} else {
+				System.out.println("Please Enter a Working Hour and not a Non-Working Hour.");
+			}
+
+			System.out.println("\nYou work for a total of " + "hour's tonight and made a total of $" + " tonight.\n\n");
 			System.out.println("Would you like to Continue?");
 			System.out.println("Yes or No");
+
 		} else if (!dayDecision.equalsIgnoreCase("Y")) {
 			System.out.println("Maybe Next Time...");
 		} // End of Sunday Decision

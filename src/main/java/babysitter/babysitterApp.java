@@ -17,8 +17,8 @@ public class BabysitterApp {
 		families.add(familyB);
 		families.add(familyC);
 
-		System.out.println("\t\t\t\tThis is my version of the Babysitter Kata.");
-		System.out.println("\t\tThank You for your time.\n");
+		System.out.println("\t\tThis is my version of the Babysitter Kata.");
+		System.out.println("\t\t\tThank You for your time.\n");
 
 		System.out.println("This is a 24 hour clock time. 1300 to 0000 is 1pm to 12am.");
 		System.out.println("To make it easier, if you subtract 12 from 1300 you get 1pm.\n");
@@ -47,7 +47,9 @@ public class BabysitterApp {
 			} else {
 				System.out.println("Enter in the the correct Family Letter: A, B, C");
 			}
-			System.out.println("You work for a total of " + "hour's tonight and made a total of $" + " tonight.");
+			System.out.println("You work for a total of " + "hour's tonight and made a total of $" + " tonight.\n\n");
+			System.out.println("Would you like to Continue?");
+			System.out.println("Yes or No");
 		} else if (!dayDecision.equalsIgnoreCase("Y")) {
 			System.out.println("Maybe Next Time...");
 		} // End of Sunday Decision

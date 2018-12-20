@@ -32,9 +32,9 @@ public class BabysitterApp {
 		System.out.println("Family C: $21.00 - 1700hrs to 2100hrs | $15.00 - 2100hrs to 0400hrs\n");
 
 		// Sunday
-		System.out.println("Did you work on Sunday? Y or N");
+		System.out.println("Did you work Tonight? Y or N");
 		String dayDecision = input.nextLine();
-		if (!dayDecision.equalsIgnoreCase("N")) { // Start of Sunday Decision
+		if (dayDecision.equalsIgnoreCase("Y")) { // Start of Sunday Decision
 			System.out.println("Choose a Family: A, B, C");
 			String familyDecision = input.next();
 
@@ -48,6 +48,8 @@ public class BabysitterApp {
 				System.out.println("Enter in the the correct Family Letter: A, B, C");
 			}
 			System.out.println("You work for a total of " + "hour's tonight and made a total of $" + " tonight.");
+		} else if (!dayDecision.equalsIgnoreCase("Y")) {
+			System.out.println("Maybe Next Time...");
 		} // End of Sunday Decision
 
 		input.close();

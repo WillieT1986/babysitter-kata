@@ -17,9 +17,6 @@ public class BabysitterApp {
 		families.add(familyB);
 		families.add(familyC);
 
-		// String decision = "";
-		// while (!decision.equalsIgnoreCase("Yes")) {
-
 		System.out.println("This is my version of the Babysitter Kata.");
 		System.out.println("\tThank You for your time.\n");
 
@@ -34,53 +31,42 @@ public class BabysitterApp {
 				"Family B: $12.00 - 1700hrs to 2200hrs | $8.00  - 2200hrs to 0000hrs | $16.00 - 0000hrs to 0400hrs");
 		System.out.println("Family C: $21.00 - 1700hrs to 2100hrs | $15.00 - 2100hrs to 0400hrs\n");
 
-		System.out.println("Did you work on this week? Yes or No");
-		String weekDecision = input.nextLine();
-		if (!weekDecision.equalsIgnoreCase("No")) {
-			System.out.println("Maybe I can work next this coming week.");
-		} // End of weekDecision
+		// Sunday
+		System.out.println("Did you work on Sunday? Y or N");
+		String dayDecision = input.nextLine();
+		if (!dayDecision.equalsIgnoreCase("N")) { // Start of Sunday Decision
+			System.out.println("Choose a Family: A, B, C");
+			String familyDecision = input.next();
 
-		// // Sunday
-		// System.out.println("Did you work on Sunday? Y or N");
-		// String dayDecision = input.nextLine();
-		//
-		// if (!dayDecision.equalsIgnoreCase("N")) { // Start of Sunday Decision
-		//
-		// System.out.println("Choose a Family: A, B, C");
-		// String familyDecision = input.next();
-		// if (familyDecision.equalsIgnoreCase("A") ||
-		// familyDecision.equalsIgnoreCase("B")
-		// || familyDecision.equalsIgnoreCase("C")) {
-		// System.out.println("Enter Start Time: ");
-		// int startTime = input.nextInt();
-		// System.out.println("Enter End Time: ");
-		// int endTime = input.nextInt();
-		// } else if (!familyDecision.equalsIgnoreCase("A") ||
-		// !familyDecision.equalsIgnoreCase("B")
-		// || !familyDecision.equalsIgnoreCase("C")) {
-		// System.out.println("Enter in the the correct Family Letter: A, B, C");
-		// }
-		//
-		// // Monday
-		// System.out.println("Did you work on Monday? Y or N");
-		// } else if (dayDecision.equalsIgnoreCase("Y")) { // Start of Monday Decision
-		// System.out.println("Choose a Family: A, B, C");
-		// String familyDecision = input.next();
-		// if (familyDecision.equalsIgnoreCase("A") ||
-		// familyDecision.equalsIgnoreCase("B")
-		// || familyDecision.equalsIgnoreCase("C")) {
-		// System.out.println("Enter Start Time: ");
-		// int startTime = input.nextInt();
-		// System.out.println("Enter End Time: ");
-		// int endTime = input.nextInt();
-		// } else {
-		// System.out.println("Enter in the the correct Family Letter: A, B, C");
-		// }
-		// } else {
-		// dayDecision.equalsIgnoreCase("N");
-		// } // End of Mondays Decision
+			if (familyDecision.equalsIgnoreCase("A") || familyDecision.equalsIgnoreCase("B")
+					|| familyDecision.equalsIgnoreCase("C")) {
+				System.out.println("Enter Start Time: ");
+				int startTime = input.nextInt();
+				System.out.println("Enter End Time: ");
+				int endTime = input.nextInt();
+			} else {
+				System.out.println("Enter in the the correct Family Letter: A, B, C");
+			}
+		} // End of Sunday Decision
 
-		// } // End of While Loop
+		// Monday
+		System.out.println("Did you work on Monday? Y or N");
+		String dayDecision2 = input.nextLine();
+		if (!dayDecision2.equalsIgnoreCase("N")) { // Start of Sunday Decision
+			System.out.println("Choose a Family: A, B, C");
+			String familyDecision = input.next();
+
+			if (familyDecision.equalsIgnoreCase("A") || familyDecision.equalsIgnoreCase("B")
+					|| familyDecision.equalsIgnoreCase("C")) {
+				System.out.println("Enter Start Time: ");
+				int startTime = input.nextInt();
+				System.out.println("Enter End Time: ");
+				int endTime = input.nextInt();
+			} else {
+				System.out.println("Enter in the the correct Family Letter: A, B, C");
+			}
+		} // End of Mondays Decision
+
 		input.close();
 	}
 }

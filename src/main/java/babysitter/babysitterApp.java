@@ -51,11 +51,11 @@ public class BabysitterApp {
 
 		// Monday
 		System.out.println("Did you work on Monday? Y or N");
-		String dayDecision2 = input.nextLine();
-		if (!dayDecision2.equalsIgnoreCase("N")) { // Start of Sunday Decision
-			System.out.println("Choose a Family: A, B, C");
-			String familyDecision = input.next();
+		String newDecision = input.nextLine();
+		if (!newDecision.equalsIgnoreCase("N")) {
 
+			String familyDecision = input.next();
+			System.out.println("Choose a Family: A, B, C");
 			if (familyDecision.equalsIgnoreCase("A") || familyDecision.equalsIgnoreCase("B")
 					|| familyDecision.equalsIgnoreCase("C")) {
 				System.out.println("Enter Start Time: ");
@@ -65,7 +65,8 @@ public class BabysitterApp {
 			} else {
 				System.out.println("Enter in the the correct Family Letter: A, B, C");
 			}
-		} // End of Mondays Decision
+		}
+		// End of Mondays Decision
 
 		input.close();
 	}

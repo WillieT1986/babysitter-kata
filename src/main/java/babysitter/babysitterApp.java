@@ -7,6 +7,7 @@ public class BabysitterApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
+		Hours hours = new Hours(0, 0);
 		Family families = new Family("", 0, 0);
 
 		Family familyA = new Family("A", 15, 0);
@@ -59,7 +60,8 @@ public class BabysitterApp {
 
 				System.out.println("\nEnter Start Time:");
 				int startTime = input.nextInt();
-				if (startTime >= 1700 && startTime <= 2359 && startTime >= 0000 && startTime <= 0400) {
+				if (startTime >= hours.getWork(1700) && startTime <= hours.getWork(2359)
+						&& startTime >= hours.getWork(0000) && startTime <= hours.getWork(0400)) {
 				} else {
 					System.out.println("Please Enter a Working Hour and not a Non-Working Hour.");
 					input.nextInt();
@@ -74,10 +76,10 @@ public class BabysitterApp {
 					input.nextInt();
 				}
 
-				int hours = ((startTime + endTime) / 180);
+				int totalHours = ((startTime + endTime) / 180);
 
-				System.out.println("\nYou worked for family " + familyName + " for a total of " + hours
-						+ " hour's tonight and made a total of $" + hours * payRate + " tonight.\n\n");
+				System.out.println("\nYou worked for family " + familyName + " for a total of " + totalHours
+						+ " hour's tonight and made a total of $" + totalHours * payRate + " tonight.\n\n");
 
 			} else if (optionEntered.equalsIgnoreCase("N")) {
 				System.out.println("Maybe Next Time...\n\n\n\n");

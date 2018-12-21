@@ -59,18 +59,16 @@ public class BabysitterApp {
 
 				System.out.println("\nEnter Start Time:");
 				int startTime = input.nextInt();
-				if (!(startTime >= 1700 && startTime <= 2359 && startTime >= 0000 && startTime <= 0400)) {
+				if (startTime >= 1700 && startTime <= 2359 && startTime >= 0000 && startTime <= 0400) {
 				} else {
 					System.out.println("Please Enter a Working Hour and not a Non-Working Hour.");
+					input.nextInt();
 				}
 
 				System.out.println("\nEnter End Time: ");
 				int endTime = input.nextInt();
 				if (!(endTime >= 1700 && endTime <= 2359 && endTime >= 0000 && endTime <= 0400)) {
 
-				} else if (families.getFamilyHours() > startTime && families.getFamilyHours() < endTime
-						|| families.getFamilyHours() > endTime && families.getFamilyHours() < startTime) {
-					System.out.println("Cannot do this...");
 				} else {
 					System.out.println("Please Enter a Working Hour and not a Non-Working Hour.\n");
 				}

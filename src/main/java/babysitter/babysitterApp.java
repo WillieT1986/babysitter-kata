@@ -52,8 +52,12 @@ public class BabysitterApp {
 					System.out.println("Please Enter a Working Hour and not a Non-Working Hour.\n");
 				}
 
-				System.out.println(
-						"\nYou work for a total of " + "hour's tonight and made a total of $" + "tonight.\n\n");
+				// if (startTime + endTime % 180 == 0) {
+				//
+				// }
+
+				System.out.println("\nYou worked for family " + familyName + " for a total of "
+						+ ((startTime + endTime) / 180) + " hour's tonight and made a total of $" + " tonight.\n\n");
 
 			} else if (optionEntered.equalsIgnoreCase("N")) {
 				System.out.println("Maybe Next Time...\n\n\n\n");

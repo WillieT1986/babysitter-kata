@@ -62,7 +62,7 @@ public class BabysitterApp {
 					System.out.println("Please Enter a Working Hour and not a Non-Working Hour.\n");
 				}
 
-				int payRate = 0;
+				Integer payRate = null;
 				if (familyName == "A") {
 					payRate = 15;
 				} else if (familyName == "B") {

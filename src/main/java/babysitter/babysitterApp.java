@@ -7,6 +7,16 @@ public class BabysitterApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
+		Family families = new Family("", 0, 0);
+
+		Family familyA = new Family("A", 15, 0);
+		Family familyB = new Family("B", 8, 0);
+		Family familyC = new Family("C", 21, 0);
+
+		families.add(familyA);
+		families.add(familyB);
+		families.add(familyC);
+
 		String decision = ("");
 		while (!decision.equalsIgnoreCase("Yes")) {
 
@@ -52,13 +62,13 @@ public class BabysitterApp {
 					System.out.println("Please Enter a Working Hour and not a Non-Working Hour.\n");
 				}
 
-				String payRate = "";
+				int payRate = 0;
 				if (familyName == "A") {
-					payRate = "15";
+					payRate = 15;
 				} else if (familyName == "B") {
-					payRate = "12";
+					payRate = 12;
 				} else if (familyName == "C") {
-					payRate = "21";
+					payRate = 21;
 				}
 
 				System.out.println(
